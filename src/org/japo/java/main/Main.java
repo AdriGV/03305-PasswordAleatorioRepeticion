@@ -34,7 +34,7 @@ public final class Main {
         int FINAL_CUENTA = 6;
 
         //variable
-        int pass = 0;
+        int pass = INICIO_CUENTA;
         char caracterRND;
 
         //RND
