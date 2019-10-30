@@ -34,7 +34,7 @@ public final class Main {
         int FINAL_CUENTA = 6;
 
         //variable
-        char pass = 0;
+        int pass = 0;
         char caracterRND;
 
         //RND
@@ -43,15 +43,15 @@ public final class Main {
         //Mensaje
         System.out.print("Password ...: ");
 
+        //Bucle
         do {System.out.print(caracterRND);
         
-        if(caracterRND == caracterRND){
+       
         caracterRND = (char) (RND.nextInt(CAR_MAX - CAR_MIN + 1) + CAR_MIN);
-            
-        }
-        
+                  
         //Actualización
         pass++;  
+        
     } while (pass < FINAL_CUENTA);
         
         //Salto
