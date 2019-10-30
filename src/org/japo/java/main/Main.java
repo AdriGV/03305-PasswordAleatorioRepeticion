@@ -38,21 +38,22 @@ public final class Main {
         char caracterRND;
 
         //RND
-        caracterRND = (char) (RND.nextInt(CAR_MAX - CAR_MIN + 1) + CAR_MIN);
+       // caracterRND = (char) (RND.nextInt(CAR_MAX - CAR_MIN + 1) + CAR_MIN);
         
         //Mensaje
         System.out.print("Password ...: ");
 
         //Bucle
-        do {System.out.print(caracterRND);
-        
-       
+        do {
         caracterRND = (char) (RND.nextInt(CAR_MAX - CAR_MIN + 1) + CAR_MIN);
                   
         //Actualización
         pass++;  
         
-    } while (pass < FINAL_CUENTA);
+        //Mensaje
+        System.out.printf("%c", caracterRND);
+        
+        }while (pass < FINAL_CUENTA);
         
         //Salto
         System.out.println("");
